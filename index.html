@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Semester GPA Calculator</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/30acee10e5.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <nav>
+    <div class="head">
+      
+    </div>
+    <div class="mode-toggle">
+      
+    </div>
+  </nav>
+  <div class="container">
+    <h2>Semester GPA Calculator</h2>
+    <div class="input-section">
+    <div class="row row1">
+      
+      <input type="text" class="course" name="course1" id="course1" placeholder="Course Code">
+      
+      <select name="load1" class="load" id="load1" onchange="updatePoint(1)">
+        <option value="" disabled>Credit Load</option>
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+      
+      <select name="grade1" class="grade" id="grade1" onchange="updatePoint(1)">
+        <option value="" disabled>Grade</option>
+        <option value="5">A</option>
+        <option value="4">B</option>
+        <option value="3">C</option>
+        <option value="2">D</option>
+        <option value="1">E</option>
+        <option value="0">F</option>
+      </select>
+      
+      <span class="point1 point" id="point1">0</span>
+      
+    </div>
+    
+    <div class="row row2">
+      
+      <input type="text" class="course" name="course2" id="course2" placeholder="Course Code">
+      
+      <select name="load2" class="load" id="load2" onchange="updatePoint(2)">
+        <option value="" disabled>Credit Load</option>
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+      
+      <select name="grade2" class="grade" id="grade2" onchange="updatePoint(2)">
+        <option value="" disabled>Grade</option>
+        <option value="5">A</option>
+        <option value="4">B</option>
+        <option value="3">C</option>
+        <option value="2">D</option>
+        <option value="1">E</option>
+        <option value="0">F</option>
+      </select>
+      
+      <span class="point2 point" id="point2">0</span>
+      
+    </div>
+    
+    <div class="row row3">
+      
+      <input type="text" class="course" name="course3" id="course3" placeholder="Course Code">
+      
+      <select name="load3" class="load" id="load3" onchange="updatePoint(3)">
+        <option value="" disabled>Credit Load</option>
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+      
+      <select name="grade3" class="grade" id="grade3" onchange="updatePoint(3)">
+        <option value="" disabled>Grade</option>
+        <option value="5">A</option>
+        <option value="4">B</option>
+        <option value="3">C</option>
+        <option value="2">D</option>
+        <option value="1">E</option>
+        <option value="0">F</option>
+      </select>
+      
+      <span class="point3 point" id="point3">0</span>
+      
+    </div>
+    
+    <div class="row row4">
+      
+      <input type="text" class="course" name="course4" id="course4" placeholder="Course Code">
+      
+      <select name="load4" class="load" id="load4" onchange="updatePoint(4)">
+        <option value="" disabled>Credit Load</option
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+      
+      <select name="grade4" class="grade" id="grade4" onchange="updatePoint(4)">
+        <option value="" disabled>Grade</option>
+        <option value="5">A</option>
+        <option value="4">B</option>
+        <option value="3">C</option>
+        <option value="2">D</option>
+        <option value="1">E</option>
+        <option value="0">F</option>
+      </select>
+      
+      <span class="point4 point" id="point4">0</span>
+      
+    </div>
+    
+    <div class="row row5">
+      
+      <input type="text" class="course" name="course5" id="course5" placeholder="Course Code">
+      
+      <select name="load5" class="load" id="load5" onchange="updatePoint(5)">
+        <option value="" disabled>Credit Load</option>
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+      
+      <select name="grade5" class="grade" id="grade5" onchange="updatePoint(5)">
+        <option value="" disabled>Grade</option>
+        <option value="5">A</option>
+        <option value="4">B</option>
+        <option value="3">C</option>
+        <option value="2">D</option>
+        <option value="1">E</option>
+        <option value="0">F</option>
+      </select>
+      
+      <span class="point5 point" id="point5">0</span>
+      
+    </div>
+    
+    </div>
+    
+    <button id="add-course">Add Course</button>
+    
+    <div class="output-section">
+      <div class="unit-point">
+      <p>Total Units: <span id="total-units">0</span></p>
+      <p>Total Points: <span id="total-points">0</span></p>
+      </div>
+      <div class="gpa">
+      <p><span id="gpa">0</span></p>
+      </div>
+    </div>
+    
+    <footer>
+      <div id="social-group">
+        <div class="social facebook-logo">
+          <a href="https://www.facebook.com/ikechukwu750" target="_blank"> <i class="fab fa-facebook-f"></i> </a>
+        </div>
+        <div class="social twitter-logo">
+          <a href="https://www.twitter.com/iyke4web" target="_blank"> <i class="fab fa-twitter"></i> </a>
+        </div>
+        <div class="social instagram-logo">
+          <a href="https://www.linkedin.com/in/ikechukwu-kalu-059528235" target="_blank"> <i class="fab fa-linkedin"></i> </a>
+        </div>
+      </div>
+      <p>Designed and Developed by Iyke.</p>
+      <p>Copyright &copy; 2023 - All Rights Reserved.</p>
+    </footer>
+  
+  <script src="index.js"></script>
+</body>
+
+</html>

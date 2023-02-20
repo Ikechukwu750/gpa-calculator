@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&display=swap');
+
+/**
+* #eff8c4 #76b698 #556f67
+* #e7e7eb #eba548 #b99cc9 #7c7a7a #bb423c
+* #e7e7eb #a2aa6d #39799a #353636
+* #f6f1eb #9fa9c8 #696cff #854979 #24367d
+**/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #24367d;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Jost", sans-serif;
+}
+
+h2 {
+  text-align: center;
+  font-family: "Jost", sans-serif;
+}
+
+.container {
+  background-color: #f6f1eb;
+  color: #24367d;
+  margin: 0.5rem;
+  padding: 0.5rem 0.5rem;
+  border-radius: 0.3rem;
+}
+
+.row {
+  margin: 0.35rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.course {
+  border: none;
+  outline: none;
+  border-radius: 0.2rem;
+  width: 50%;
+  background-color: #fff;
+  padding: 0.4rem;
+  margin-right: 0.2rem;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(200, 200, 253, 0.9);
+}
+
+.load, .grade {
+  width: 15%;
+  padding: 0.35rem;
+  border: none;
+  border-radius: 0.2rem;
+  background-color: #fff;
+  margin-right: 0.2rem;
+  box-shadow: 0 0 15px rgba(200, 200, 253, 0.5);
+}
+
+.point {
+  background-color: #fff;
+  width: 3rem;
+  height: 2rem;
+  padding: 0.3rem 0.3rem;
+  text-align: center;
+  border-radius: 0.2rem;
+  box-shadow: 0 0 15px rgba(200, 200, 253, 0.9);
+}
+
+#add-course {
+  width: 100%;
+  padding: 0.5rem;
+  background-color: #696cff;
+  color: #f6f1eb;
+  border: none;
+  outline: none;
+  border-radius: 0.2rem;
+  margin: 0.2rem 0;
+  font-size: 1rem;
+  font-weight: 600;
+  box-shadow: 2px 2px 14px rgba(150, 150, 150, 0.6);
+}
+
+.unit-point {
+  font-size: 1rem;
+  margin: 0.3rem 0 0.3rem 1rem;
+  display: grid;
+  font-weight: 500;
+  grid-template-rows: auto auto;
+  grid-template-columns: auto auto;
+}
+
+.gpa {
+  margin: 0.5rem 0;
+  padding: 1rem;
+  border-radius: 0.3rem;
+  background-color: #fff;
+  color: #696cdd;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 500;
+  box-shadow: 0 0 20px rgba(200, 200, 253, 0.9);
+}
+
+footer {
+  background-color: #191c85;
+  color: white;
+  min-height: 40px;
+  width: 100%;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+#social-group {
+  display: flex;
+  justify-content: space-around;
+  width: 160px;
+  margin: 12px auto;
+}
+
+footer i {
+  color: white;
+}
+
+.social {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid white;
+  background-color: transparent;
+  color: white;
+  padding: 3px;
+}
